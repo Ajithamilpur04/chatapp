@@ -5,7 +5,7 @@ const feedback = document.getElementById('feedback');
 const roomMessage = document.querySelector('.room-message');
 const usersList = document.querySelector('.users');
 
-const socket = io.connect('http://localhost:3000/');
+const socket = io.connect('https://web-production-58b7.up.railway.app/');
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
