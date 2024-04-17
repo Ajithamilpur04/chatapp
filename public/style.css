@@ -150,3 +150,61 @@ body {
 }
 
 
+/* Add media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .window {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #c2c6b6;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .online {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: auto;
+        top: auto;
+        background-color: rgb(110, 103, 103);
+    }
+
+    .users {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content div {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .content p {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Add media query for even smaller devices like smartphones */
+@media screen and (max-width: 480px) {
+    .content p {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .content input {
+        height: 40px;
+    }
+
+    .content div {
+        padding: 10px;
+    }
+}
+
+
+
